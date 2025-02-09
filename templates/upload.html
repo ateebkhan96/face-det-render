@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YOLOv11 Flask App</title>
+</head>
+<body>
+    <h1>Upload an Image for Detection</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+    <br>
+
+    <h2>Or</h2>
+
+    <a href="{{ url_for('live_view') }}">
+        <button style="background-color: green; color: white; padding: 10px; font-size: 16px;">
+            🎥 Go Live with Webcam
+        </button>
+    </a>
+</body>
+</html>
